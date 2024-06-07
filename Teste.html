@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <style>
+
+  </style>
+  <body>
+    <div class="container">
+      <aside>
+        <div class="logo-container">
+          <img src="./images/odin-lined.png" alt="Odin Logo" width="100px">
+          <span>ODIN</span>
+        </div>
+      </aside>
+      <section class="main">
+        <div class="presentation">
+          <p>This is not a real online service! You know you need something <br>
+            like this in your life to help you realize your deepest dreams. <br>
+            Sign up now to get started.</p>
+          <p>You know you want to.</p>
+        </div>
+        <div class="signup">
+          <form>
+            <div class="inputs">
+              <p>Let's do this!</p>
+              <div class="input-group">
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" name="first-name" required>
+                <span class="error-message">* Required</span>
+              </div>
+              <div class="input-group">
+                <label for="first-name">LAST NAME</label>
+                <input type="text" name="first-name" required>
+                <span class="error-message">* Required</span>
+              </div>
+              <div class="input-group">
+                <label for="first-name">EMAIL</label>
+                <input type="email" name="first-name" required>
+                <span class="error-message">* Required/Email format not valid</span>
+              </div>
+              <div class="input-group">
+                <label for="first-name">PHONE NUMBER</label>
+                <input type="tel" name="first-name" required maxlength="15" minlength="15">
+                <span class="error-message">* Required/Phone format must be (xx) xxxxx-xxxx</span>
+              </div>
+              <div class="input-group">
+                <label for="first-name">PASSWORD</label>
+                <input type="password" name="first-name" required minlength="6" maxlength="16">
+                <span class="error-message">* Required/Must have 6-16 characters</span>
+              </div>
+              <div class="input-group">
+                <label for="first-name">CONFIRM PASSWORD</label>
+                <input type="password" name="first-name" required minlength="6" maxlength="16">
+                <span class="error-message">* Required/Must have 6-16 characters</span>
+              </div>
+            </div>
+            <div class="buttons">
+              <button>Create Account</button>
+              <p>Already have an account? <a href="#">Log In</a></p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

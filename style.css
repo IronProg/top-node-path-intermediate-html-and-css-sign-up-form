@@ -1,0 +1,169 @@
+@font-face {
+  font-family: 'Norse-Bold';
+  src: url('./Norse-Bold.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+input {
+  all: unset;
+}
+
+p, span, a {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: max(90vh, 100%);
+  background-color: #f9fafb;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  height: min(100vh, 100%);
+  overflow-x: hidden;
+}
+
+aside {
+  background-image: url("./images/photo-1585202900225-6d3ac20a6962.avif");
+  background-size: cover;
+  height: calc(100% - 20vh);
+  width: 100%;
+  padding-top: 20vh;
+  overflow-y: hidden;
+}
+
+.logo-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.6rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container > span {
+  font-family: 'Norse-Bold', 'Courier New', Courier, monospace;
+  color: white;
+  font-size: 6rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: (100% -8rem);
+  width: 100%;
+  overflow: hidden;
+  align-items: stretch;
+  padding: 4rem 0;
+}
+
+.main > .presentation {
+  width: auto;
+  padding: 0 0 2rem 2rem;
+  font-size: 1rem;
+}
+
+.presentation > p:first-of-type {
+  word-wrap: normal;
+}
+
+.signup > form > * {
+  padding-left: 2rem;
+}
+
+.inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  background-color: white;
+  padding-bottom: 2rem;
+  box-shadow: 0 2px 3px 0 black;
+}
+
+.inputs > p {
+  grid-column: 1/3;
+}
+
+form > p {
+  color: #1f2937;
+}
+
+.input-group {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.input-group > label {
+  font-size: 0.9rem;
+  font-family: sans-serif;
+  color: #1f2937;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.input-group > input {
+  border: #E5E7EB 1px solid;
+  border-radius: 5px;
+  display: block;
+  width: 85%;
+  height: 32px;
+  background-color: #fffefe;
+  font-family: sans-serif;
+  padding-left: 0.5rem;
+}
+
+.input-group > span.error-message {
+  font-size: 0.8rem;
+  color: red;
+  display: none;
+}
+
+.input-group > input:user-invalid + span.error-message {
+  display: block;
+}
+
+.input-group > input:focus {
+  border-color: #1d4ed8;
+}
+
+.input-group > input:user-invalid {
+  border-color: #b91c1c;
+}
+
+.buttons button {
+  margin-top: 2rem;
+  background-color: #596D48;
+  border: 0;
+  border-radius: 5px;
+  height: 51px;
+  width: 234px;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+}
+
+.buttons p {
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.buttons a {
+  font-size: 1rem;
+  font-weight: 900;
+  color: #596d48;
+}
+
